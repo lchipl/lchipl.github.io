@@ -1,0 +1,212 @@
+body{
+	margin:0px;
+	padding:0px;
+	background-color:#39AECF;
+	overflow: hidden;
+}
+
+.grid{
+	display:grid;
+	grid-template-columns: 1fr;
+	grid-template-rows:repeat(4,auto);
+}
+.header{
+	grid-row:span 1;
+	background:url('reklama-bb-4.jpg');
+	background-position:center;
+	background-size:100%;
+}
+
+
+.bc{
+	background-color: white;
+}
+.about{
+	border-top:5px solid #39AECF;
+	grid-row:2/span 1;
+	display: grid;
+	grid-template-areas: 'photo 		me 			me'
+					     'photo 		html 		css'
+						 '. 			git		js'
+						 '.				.			.'
+						 '.				.			.'
+						 '.				.			.'
+						 '.				.			.'
+						 '.				.			.'
+						 '.				.			.'
+						 '.				.			.';
+						 
+	grid-column-gap:20px;
+	grid-row-gap:5px;
+	font-size:20px;
+}
+.about h1{
+	color:#00246B;
+}
+.about h2{
+	color:#289FDB;
+}
+.about_img{
+grid-area:photo;
+}
+.about_img img{
+	margin:30px 30px 30px 30px;
+	padding:30px 30px 30px 30px;
+	border-radius:50%;
+	width:250px;
+	height:250px;
+	border:1px solid white;
+}
+
+.about_me{
+	grid-area: me;
+	font-size:23px;
+}
+
+.about_html{
+	grid-area:html;
+}
+
+.about_css{
+	grid-area:css;
+}
+
+.about_git{
+	grid-area:git;
+}
+
+.about_js{
+	grid-area:js;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.projects{
+	grid-row:3/span 1;
+}
+
+.contacts{
+	grid-row:4/span 1;
+}
+
+.navigation li{
+	width:700px;
+	list-style: none;
+}
+
+
+.navigation a{
+	text-decoration: none;
+	color:black;
+	cursor: pointer;
+	font-size:50px;
+	cursor: pointer;
+
+}
+.navigation li:hover{
+	border-radius:5px;
+	background:white;
+	opacity:.5;
+
+}
+
+
+
+.my_projects{
+	display:grid;
+	grid-template-areas: '. 			h1     '
+						 'photograph   	avito'
+						 'banksy        sonic'
+						 ' .			.		'
+						 ' .			.		'
+						 ' .			.		';
+	grid-gap:20px;
+}
+
+.projects_h1{
+	grid-area:h1;
+}
+
+.projects_photograph{
+	grid-area:photograph;
+	background:red;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.projects_avito{
+	grid-area:avito;
+	background:red;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+
+.projects_banksy{
+	grid-area:banksy;
+	background:red;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+
+.projects_sonic{
+	grid-area:sonic;
+}
+
+
+.projects_banksy, .projects_sonic, .projects_avito, .projects_photograph{
+	background:#808080;
+	border-radius: 5px;
+	cursor: pointer;
+	}
+
+.projects_banksy:hover, .projects_sonic:hover, .projects_avito:hover, .projects_photograph:hover{
+		background:orange;
+		opacity:.8;
+	}
+
+
+.contact_list{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap:1fr;
+
+}
+
+.contact_list img {
+	width:100px;
+	height:100px;
+}
+
+.contact_list li{
+	list-style: none;
+}
+
+.cl2,.cl5{
+	color:#4E51D8;
+	border-radius:5px;
+	height:40px;
+	padding:5px 5px 5px 5px;
+	font-size:20px;
+}
+.cl2 span,.cl5 span{
+	color:#080B74;
+	font-weight: bold;
+	font-size:25px;
+}
