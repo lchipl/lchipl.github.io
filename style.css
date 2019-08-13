@@ -180,7 +180,8 @@ grid-area:photo;
 		background:orange;
 		opacity:.8;
 	}
-
+.contacts {border-top:5px solid #39AECF;}
+	
 
 .contact_list{
 	display: grid;
