@@ -28,9 +28,15 @@ body{
 	grid-template-areas: 'photo 		me 			me'
 					     'photo 		html 		css'
 						 '. 			git		js'
+						 '.				.			.'
+						 '.				.			.'
+						 '.				.			.'
+						 '.				.			.'
+						 '.				.			.'
+						 '.				.			.'
 						 '.				.			.';
 						 
-	grid-column-gap:40px;
+	grid-column-gap:20px;
 	font-size:20px;
 }
 .about h1{
