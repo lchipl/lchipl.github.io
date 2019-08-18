@@ -35,7 +35,7 @@ body{
 						 '.				.			.'
 						 '.				.			.'
 						 '.				.			.';
-						 
+
 	grid-column-gap:20px;
 	grid-row-gap:5px;
 	font-size:20px;
@@ -189,7 +189,7 @@ border-top:5px solid #39AECF;
 
 .contact_list{
 	display: grid;
-	grid-template-columns: 1fr;
+	grid-template-columns: 1fr 1fr;
 	grid-gap:1fr;
 
 }
@@ -201,6 +201,7 @@ border-top:5px solid #39AECF;
 
 .contact_list li{
 	list-style: none;
+	grid-column: 1/2;
 }
 
 .cl2,.cl5{
@@ -214,4 +215,43 @@ border-top:5px solid #39AECF;
 	color:#080B74;
 	font-weight: bold;
 	font-size:25px;
+}
+
+//girl
+
+header {
+  background-color: green;
+}
+header:hover {
+  background-color: red;
+}
+body{
+  background:#2D8067
+}
+
+#anime{
+    padding: 0;
+    position: absolute;
+    right: 300px;
+    bottom: 300px;
+    width: 150px;
+}
+#grill{
+    position: relative;
+    width: 150px;
+    height: auto;
+}
+#left-eye{
+    position: absolute;
+    width: 7px;
+    height: auto;
+    top: 49px;
+    left: 62px;
+}
+#right-eye{
+    position: absolute;
+    width: 7px;
+    height: auto;
+    top: 59px;
+    left: 99px;
 }
