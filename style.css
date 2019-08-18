@@ -219,15 +219,6 @@ border-top:5px solid #39AECF;
 
 //girl
 
-header {
-  background-color: green;
-}
-header:hover {
-  background-color: red;
-}
-body{
-  background:#2D8067
-}
 
 #anime{
     padding: 0;
