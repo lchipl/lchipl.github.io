@@ -11,13 +11,67 @@ body{
 	grid-template-rows:repeat(4,auto);
 }
 .header{
-	grid-row:span 1;
+	display:grid;
+	grid-template-columns: repeat(6,1fr);
+	grid-template-rows:repeat(6,1fr);
 	background:url('reklama-bb-4.jpg');
 	background-position:center;
 	background-size:100%;
 }
+.h-header{
+	grid-column:1/span 3;
+	margin-left:50px;
+}
+.fr{
+	grid-column:5/auto;
+	grid-row:3/auto;
+}
+.anime{
+	position: absolute;
+	width:150px;
+}
+#grill{
+    position: relative;
+    width: 150px;
+    height: auto;
+}
+#left-eye{
+	position:absolute;
+    width: 7px;
+    height: auto;
+		top: 49px;
+    left: 62px;
+}
+#right-eye{
+	  position:absolute;
+    width: 7px;
+    height: auto;
+		top: 59px;
+    left: 99px;
+}
+.navigation{
+	grid-column: 1/span 2;
+	grid-row: 3;
+}
+.navigation li{
+	width:700px;
+	list-style: none;
+}
 
+.navigation a{
+	text-decoration: none;
+	color:black;
+	cursor: pointer;
+	font-size:50px;
+	cursor: pointer;
 
+}
+.navigation li:hover{
+	border-radius:5px;
+	background:white;
+	opacity:.5;
+
+}
 .bc{
 	background-color: white;
 }
@@ -26,15 +80,15 @@ body{
 	grid-row:2/span 1;
 	display: grid;
 	grid-template-areas: 'photo 		me 			me'
-					     'photo 		html 		css'
-						 '. 			git		js'
-						 '.				.			.'
-						 '.				.			.'
-						 '.				.			.'
-						 '.				.			.'
-						 '.				.			.'
-						 '.				.			.'
-						 '.				.			.';
+					     				 'photo 		html 		css'
+											 '. 			git		js'
+						 					'.				.			.'
+						 					'.				.			.'
+						 					'.				.			.'
+										  '.				.			.'
+						 						'.				.			.'
+											 '.				.			.'
+						 						'.				.			.';
 
 	grid-column-gap:20px;
 	grid-row-gap:5px;
@@ -78,22 +132,6 @@ grid-area:photo;
 .about_js{
 	grid-area:js;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 .projects{
@@ -220,29 +258,20 @@ border-top:5px solid #39AECF;
 //girl
 
 
-#anime{
-    padding: 0;
-    position: absolute;
-    right: 300px;
-    bottom: 300px;
-    width: 150px;
-}
+
 #grill{
     position: relative;
     width: 150px;
     height: auto;
 }
 #left-eye{
-    position: absolute;
     width: 7px;
     height: auto;
-    top: 49px;
-    left: 62px;
+
 }
 #right-eye{
-    position: absolute;
+	  position:absolute;
     width: 7px;
     height: auto;
-    top: 59px;
-    left: 99px;
+
 }
